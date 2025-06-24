@@ -50,7 +50,6 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Empresa</h3>
             <ul className="space-y-2 text-gray-400">
               <li><a href="#portafolio" className="hover:text-white transition-colors">Portafolio</a></li>
-              <li><a href="#testimonios" className="hover:text-white transition-colors">Testimonios</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Sobre Nosotros</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Carrera</a></li>

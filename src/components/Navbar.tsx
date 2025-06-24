@@ -18,7 +18,6 @@ const Navbar = () => {
     { name: 'Servicios', href: '#servicios' },
     { name: 'Portafolio', href: '#portafolio' },
     { name: 'Precios', href: '#precios' },
-    { name: 'Testimonios', href: '#testimonios' },
     { name: 'Contacto', href: '#contacto' }
   ];
 
@@ -29,10 +28,18 @@ const Navbar = () => {
         : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-[120px] lg:h-[140px]">
           {/* Logo */}
-          <div className="flex items-center">
-            <img src="/src/assets/gud-logo.png" alt="Logo Glow Up Digital" className="object-contain max-w-[60px] max-h-[10px]" />
+          <div className="flex items-center pl-8 lg:pl-16">
+            <img 
+              src="/src/assets/gud-logo.png" 
+              alt="Logo Glow Up Digital" 
+              className={`object-contain transition-all duration-300 ${
+                isScrolled 
+                  ? 'h-[150px] w-auto max-w-[320px]' 
+                  : 'h-[400px] w-auto max-w-[400px] lg:h-[400px] lg:max-w-[480px]'
+              }`}
+            />
           </div>
 
           {/* Desktop Navigation */}
